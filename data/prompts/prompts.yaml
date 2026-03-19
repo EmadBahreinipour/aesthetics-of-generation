@@ -1,0 +1,305 @@
+# Prompt set for The Aesthetics of Generation
+# 40 prompts: 10 per genre (narration, argumentation, dialogue, description)
+# Design principles:
+#   - Neutral topics (no safety-filter triggers)
+#   - Diverse subjects to prevent topic bias
+#   - Genre-specific instructions to elicit distinct text types
+#   - Open enough for each model's stylistic signature to emerge
+
+# Shared constraints appended to every prompt at generation time
+output_constraints: >
+  Length: 350-450 words. Output only the text (no preamble). Plain text only
+  (no title, headings, bullet points, or markdown). Do not include citations
+  or references. Do not mention being an AI or a language model.
+
+prompts:
+  # ──────────────────────────────────────────────
+  # NARRATION (narr_01 – narr_10)
+  # ──────────────────────────────────────────────
+
+  - id: narr_01
+    genre: narration
+    text: >
+      Write a short story about a traveler who discovers an abandoned
+      observatory in a small mountain village. Include sensory details
+      and internal reflection.
+
+  - id: narr_02
+    genre: narration
+    text: >
+      Describe a childhood memory involving a rainstorm. Focus on
+      emotional atmosphere and use of imagery.
+
+  - id: narr_03
+    genre: narration
+    text: >
+      Write a short narrative about a baker who opens their shop
+      for the last time before retirement. Show the character's
+      feelings through small actions and observations.
+
+  - id: narr_04
+    genre: narration
+    text: >
+      Tell the story of a musician who plays a concert to an
+      almost empty hall. Focus on the internal experience rather
+      than external events.
+
+  - id: narr_05
+    genre: narration
+    text: >
+      Write a short story about two strangers who share a park
+      bench during a long afternoon. Let the narrative unfold
+      through small gestures and unspoken thoughts.
+
+  - id: narr_06
+    genre: narration
+    text: >
+      Narrate the experience of a lighthouse keeper during their
+      first week alone on a remote island. Emphasize solitude,
+      routine, and the surrounding landscape.
+
+  - id: narr_07
+    genre: narration
+    text: >
+      Write a narrative about a teacher returning to the school
+      where they once studied as a child. Interweave past and
+      present through memory and observation.
+
+  - id: narr_08
+    genre: narration
+    text: >
+      Tell the story of a person who finds an old, handwritten
+      letter tucked inside the pocket of a secondhand coat. Build the
+      narrative around curiosity and imagination.
+
+  - id: narr_09
+    genre: narration
+    text: >
+      Write a short story about a night train journey across
+      a countryside. Focus on the rhythm of the travel, the
+      passing scenery, and the thoughts of the passenger.
+
+  - id: narr_10
+    genre: narration
+    text: >
+      Write a short story about a photographer who spends an
+      entire day documenting a single street. Reveal what they
+      notice that others overlook.
+
+  # ──────────────────────────────────────────────
+  # ARGUMENTATION (arg_01 – arg_10)
+  # ──────────────────────────────────────────────
+
+  - id: arg_01
+    genre: argumentation
+    text: >
+      Present a balanced argument about whether remote work should
+      become the standard for knowledge workers. Include at least
+      two perspectives.
+
+  - id: arg_02
+    genre: argumentation
+    text: >
+      Argue for or against the proposition that artificial intelligence
+      will fundamentally change education within the next decade.
+
+  - id: arg_03
+    genre: argumentation
+    text: >
+      Write an argumentative essay on whether public libraries
+      remain essential in the digital age. Consider both sides
+      before stating your position.
+
+  - id: arg_04
+    genre: argumentation
+    text: >
+      Argue whether handwriting should still be taught in schools
+      now that most communication is digital. Present evidence
+      and reasoning for your position.
+
+  - id: arg_05
+    genre: argumentation
+    text: >
+      Write an essay arguing for or against the idea that cities
+      should prioritize public transportation over private car
+      infrastructure. Support your claims with reasoning.
+
+  - id: arg_06
+    genre: argumentation
+    text: >
+      Present an argument about whether university education
+      should focus more on practical skills or on broad
+      intellectual development. Acknowledge counterarguments.
+
+  - id: arg_07
+    genre: argumentation
+    text: >
+      Argue whether learning a musical instrument should be a
+      required part of primary school education. Build a clear
+      case with supporting reasons.
+
+  - id: arg_08
+    genre: argumentation
+    text: >
+      Write an argumentative piece on whether zoos serve a
+      valuable purpose in modern society or should be phased
+      out. Weigh the ethical and educational dimensions.
+
+  - id: arg_09
+    genre: argumentation
+    text: >
+      Argue for or against the claim that reading fiction makes
+      people more empathetic. Use logical reasoning, consider
+      counterarguments, and avoid citing specific studies.
+
+  - id: arg_10
+    genre: argumentation
+    text: >
+      Write an argumentative essay on whether travel broadens the
+      mind or merely reinforces existing biases. Present a clear
+      thesis and address the opposing view.
+
+  # ──────────────────────────────────────────────
+  # DIALOGUE (dial_01 – dial_10)
+  # ──────────────────────────────────────────────
+
+  - id: dial_01
+    genre: dialogue
+    text: >
+      Write a dialogue between two old friends who meet unexpectedly
+      at an airport after ten years apart.
+
+  - id: dial_02
+    genre: dialogue
+    text: >
+      Create a conversation between a mentor and student discussing
+      the student's career uncertainty.
+
+  - id: dial_03
+    genre: dialogue
+    text: >
+      Write a conversation between a grandparent and grandchild
+      as they look through an old photo album together. Let
+      each character's personality come through in their speech.
+
+  - id: dial_04
+    genre: dialogue
+    text: >
+      Create a dialogue between two neighbors who have very
+      different opinions about how to maintain a shared garden.
+      Keep the tone civil but let the disagreement show.
+
+  - id: dial_05
+    genre: dialogue
+    text: >
+      Write a conversation between a florist and a customer who
+      wants to buy a flower they once saw years ago but can only
+      describe vaguely. Show how they work together to identify it.
+
+  - id: dial_06
+    genre: dialogue
+    text: >
+      Create a dialogue between two colleagues on a lunch break
+      debating whether it is better to live in a big city or a
+      small town. Give each a distinct voice.
+
+  - id: dial_07
+    genre: dialogue
+    text: >
+      Write a conversation between a parent and a teenager
+      negotiating the terms of the teenager's first solo trip
+      with friends. Show the tension between concern and trust.
+
+  - id: dial_08
+    genre: dialogue
+    text: >
+      Create a dialogue between a museum guide and a skeptical
+      visitor who questions the value of preserving old
+      artifacts. Let both sides make compelling points.
+
+  - id: dial_09
+    genre: dialogue
+    text: >
+      Write a conversation between two strangers stuck in an
+      elevator for twenty minutes. Show how they go from
+      awkward silence to genuine connection.
+
+  - id: dial_10
+    genre: dialogue
+    text: >
+      Write a dialogue between a chef and a food critic who
+      disagree about whether traditional recipes should be
+      modernized. Let the conversation reveal each character's
+      values.
+
+  # ──────────────────────────────────────────────
+  # DESCRIPTION (desc_01 – desc_10)
+  # ──────────────────────────────────────────────
+
+  - id: desc_01
+    genre: description
+    text: >
+      Describe a bustling city market at dawn. Focus on colors, sounds,
+      smells, and the movement of people.
+
+  - id: desc_02
+    genre: description
+    text: >
+      Describe a quiet forest clearing in autumn. Use precise language
+      to capture the atmosphere.
+
+  - id: desc_03
+    genre: description
+    text: >
+      Describe the interior of an old, well-used workshop belonging
+      to a carpenter. Focus on the tools, materials, and signs of
+      years of craftsmanship.
+
+  - id: desc_04
+    genre: description
+    text: >
+      Describe a Mediterranean coastal village as seen from a
+      hilltop at sunset. Use vivid sensory language to convey
+      the scene.
+
+  - id: desc_05
+    genre: description
+    text: >
+      Describe a self-service laundromat on a winter afternoon.
+      Capture the atmosphere through light, sound, and the behavior
+      of the people present.
+
+  - id: desc_06
+    genre: description
+    text: >
+      Describe a traditional open-air café in a European city
+      square during a mild spring evening. Focus on the setting,
+      the people, and the ambient sounds.
+
+  - id: desc_07
+    genre: description
+    text: >
+      Describe the landscape seen from the window of a slow-moving
+      bus passing through farmland in early morning. Emphasize
+      light, color, and the sense of movement.
+
+  - id: desc_08
+    genre: description
+    text: >
+      Describe a small, cluttered antique shop. Focus on the
+      objects, the quality of light, and the feeling of being
+      surrounded by things with unknown histories.
+
+  - id: desc_09
+    genre: description
+    text: >
+      Describe a rooftop terrace in a dense city at night. Capture
+      the contrast between the calm of the terrace and the activity
+      of the city below.
+
+  - id: desc_10
+    genre: description
+    text: >
+      Describe an old stone bridge over a river on a foggy
+      morning. Focus on texture, light, and the interplay
+      between the structure and the natural surroundings.

@@ -1,0 +1,25 @@
+# Robustness test prompts: tone-modified versions of base prompts
+
+tone_modifiers:
+  formal: >
+    Write in a formal, academic tone. Use precise vocabulary, complex
+    sentence structures, and an impersonal register. Avoid colloquialisms
+    and contractions.
+  casual: >
+    Write in a relaxed, conversational tone. Use short sentences, everyday
+    vocabulary, contractions, and a warm, informal register — as if
+    speaking to a friend.
+  human_mimic: >
+    Write as a real human would — with natural imperfections, occasional
+    hesitations, varied paragraph lengths, and a personal, authentic voice.
+    Avoid polished or formulaic phrasing.
+
+base_prompt_ids:
+  - narr_01
+  - narr_05
+  - arg_01
+  - arg_09
+  - dial_02
+  - dial_09
+  - desc_01
+  - desc_05
